@@ -21,26 +21,33 @@ input{
     background-color: black;
 }
 
-.icon{
-    position: relative;
-    color: black;
+.btn-expand-icon {
+    display: flex;
+    gap: 4px;
+    max-width: 45px;
+    overflow: hidden;
+    transition: max-width 0.3s ease-in-out;
+    white-space: nowrap;
 }
 
-.icon i{
-    font-size: 48px;
-    transition: transform 0.3s ease;
+.btn-expand-icon i {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease-in-out;
 }
 
-.icon i:hover{
-    transform: scale(1.2);
-}
-
-.text{
+.btn-expand-icon .text {
     opacity: 0;
-    transition: opacity 0.3s ease;
-    font-size: 22px;
+    transition: opacity 0.3s ease-in-out;
 }
 
-.icon i:hover .text{
+.btn-expand-icon:hover {
+    max-width: 120px; /* aumenta a largura ao hover */
+}
+
+.btn-expand-icon:hover .text {
     opacity: 1;
+}
+
+.btn-expand-icon:hover i {
+    transform: scale(1.2);
 }
