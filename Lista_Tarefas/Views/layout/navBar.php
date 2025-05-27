@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand ps-3" href="#">Lista de Tarefas - CRM Soluções</a>
+    <a class="navbar-brand ps-3" href="#">Lista de Tarefas</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -15,7 +15,6 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="http://localhost:8080/dev-kabum/desafio-kabum/portal-administrativo/funcoes/cadastrarCliente.php#">Cadastrar</a></li>
-            <li><a class="dropdown-item" href="http://localhost:8080/dev-kabum/desafio-kabum/portal-administrativo/funcoes/listarCliente.php#">Listar</a></li>
           </ul>
         </li>
       </ul>
