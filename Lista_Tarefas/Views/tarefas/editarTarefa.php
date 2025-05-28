@@ -19,17 +19,17 @@
             
             <h2 class="text-center my-5">Editar Tarefa</h2>
 
-            <div class="border rounded p-3 m-2 text-center">
+            <div class="border rounded p-2 m-2 text-center">
                 <h4 class="text-center">Tarefa: </h4>
 
-                <div class="row mt-3 p-2 text-center">
+                <div class="row mt-2 p-2 text-center">
                     <div class="col">
                         <label for="" class="form-label">ID</label>
                         <input type="text" name="id" id="id" class="form-control rounded-pill">
                     </div>
                 </div>
 
-                <div class="row mt-3 p-2 text-center">
+                <div class="row mt-2 p-2 text-center">
                     <div class="col">
                         <label for="" class="form-label">Título</label>
                         <input type="text" name="titulo" id="titulo" class="form-control rounded-pill">
@@ -40,7 +40,7 @@
                     </div>
                 </div>
 
-                <div class="row mt-3 p-2 text-center">
+                <div class="row mt-2 p-2 text-center">
                     <div class="col">
                         <label for="" class="form-label">Data de Criação</label>
                         <input type="text" name="dataCriacao" id="dataCriacao" class="form-control rounded-pill">
