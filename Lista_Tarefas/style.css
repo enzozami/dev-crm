@@ -14,7 +14,7 @@
 }
 
 input{
-    border-radius: 1rem !important;
+    text-transform: capitalize;
 }
 
 .nav-link:hover{
