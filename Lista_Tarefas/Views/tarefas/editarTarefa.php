@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Tarefa</title>
+    <title>Atualizar Tarefa</title>
     <link rel="stylesheet" href="../../style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -39,7 +39,7 @@
                         <input type="text" name="descricao" id="descricao" class="form-control rounded-pill">
                     </div>
                 </div>
-                
+
                 <div class="row mt-3 p-2 text-center">
                     <div class="col">
                         <label for="" class="form-label">Data de Criação</label>
@@ -50,6 +50,10 @@
                         <input type="text" name="usuario" id="usuario" class="form-control rounded-pill">
                     </div>
                 </div>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center">
+                <button class="btn btn-outline-success my-2">Atualizar Tarefa</button>
             </div>
         </form>
     </div>
