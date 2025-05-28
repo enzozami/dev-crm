@@ -3,7 +3,7 @@ CREATE DATABASE bancoCRM;
 USE bancoCRM;
 
 CREATE TABLE login(
-    id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    idUsuario INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
     usuario VARCHAR(50) NOT NULL,
     email VARCHAR(50) UNIQUE NOT NULL,
     senha VARCHAR(15) NOT NULL
@@ -15,5 +15,5 @@ CREATE TABLE listaTarefas(
     descricao VARCHAR(200) NOT NULL,
     dataCriacao date NOT NULL,
     id_usuario INT NOT NULL,
-    FOREIGN KEY (id_usuario) REFERENCES login(id)
+    FOREIGN KEY (id_usuario) REFERENCES login(idUsuario)
 );
