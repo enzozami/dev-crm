@@ -17,7 +17,7 @@
     <div class="container">
         <form action="" method="post">
             
-            <h2 class="text-center">Editar Tarefa</h2>
+            <h2 class="text-center my-5">Editar Tarefa</h2>
 
             <div class="border rounded p-3 m-2 text-center">
                 <h4 class="text-center">Tarefa: </h4>
@@ -57,5 +57,9 @@
             </div>
         </form>
     </div>
+
+    <?php 
+        include_once "../layout/footer.php";
+    ?>
 </body>
 </html>
