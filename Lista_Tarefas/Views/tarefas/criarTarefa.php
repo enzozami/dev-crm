@@ -25,21 +25,21 @@
                 <div class="row mt-3 p-2 text-center">
                     <div class="col">
                         <label for="titulo" class="text-center form-label">Título</label>
-                        <input type="text" name="titulo" class="form-control rounded-pill" style="text-transform: capitalize">
+                        <input type="text" name="titulo" id="titulo" class="form-control rounded-pill" style="text-transform: capitalize">
                     </div>
                     <div class="col">
                         <label for="descricao" class="text-center form-label">Descrição</label>
-                        <input type="text" name="descricao" class="form-control rounded-pill" style="text-transform: capitalize">
+                        <input type="text" name="descricao" id="descricao" class="form-control rounded-pill" style="text-transform: capitalize">
                     </div>
                 </div>
                 <div class="row mt-3 text-center">
                     <div class="col">
                         <label for="dataCriacao" class="text-center form-label">Data de Criação</label>
-                        <input type="date" name="dataCriacao" class="form-control rounded-pill">
+                        <input type="date" name="dataCriacao" id="dataCriacao" class="form-control rounded-pill">
                     </div>
                     <div class="col">
                         <label for="usuario" class="text-center form-label">Usuário</label>
-                        <input type="text" name="usuario" class="form-control rounded-pill" style="text-transform: capitalize">
+                        <input type="text" name="usuario" id="usuario" class="form-control rounded-pill" style="text-transform: capitalize">
                     </div>
                 </div>
             </div>
