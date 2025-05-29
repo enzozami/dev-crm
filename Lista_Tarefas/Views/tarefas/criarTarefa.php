@@ -45,10 +45,12 @@
             </div>
 
             <div class="d-flex justify-content-center align-items-center">
-                <button class="btn btn-outline-success my-2">Criar Tarefa</button>
+                <button type="button" onclick="criarTarefa()" class="btn btn-outline-success my-2">Criar Tarefa</button>
             </div>
         </form>
     </div>
+
+    <script src="../../public/script.js"></script>
 
     <?php
         include_once "../layout/footer.php";
