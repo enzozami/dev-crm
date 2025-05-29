@@ -13,10 +13,6 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra sutil */
 }
 
-input{
-    text-transform: capitalize;
-}
-
 .nav-link:hover{
     background-color: black;
 }
