@@ -22,7 +22,7 @@
       <ul class="navbar-nav ms-auto">
         <?php if (isset($_SESSION['user_name'])): ?>
           <li class="nav-item">
-            <a class="nav-link" href="#">Bem-vindo, <?php echo $_SESSION['user_name']; ?></a>
+            <a class="nav-link" href="#">Bem-vindo, <?php echo $_SESSION['usuario']; ?></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../Logout.php">Sair</a>
