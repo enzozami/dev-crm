@@ -7,7 +7,7 @@
         }
 
         public function autenticar($email, $senha){
-            $sql = "SELECT * FROM bancoCRM WHERE email = :email";
+            $sql = "SELECT * FROM login WHERE email = :email";
             $params = [
                 "email" => $email
             ];
