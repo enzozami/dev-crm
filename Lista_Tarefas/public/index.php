@@ -4,6 +4,10 @@
     require_once "../config/connection.php";
     require_once "../models/Usuario.php";
 
+    $db = new Database();
+
+    $database = $db->conectar();
+
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
         $email = $_POST["email"];
         $senha = $_POST["senha"];
