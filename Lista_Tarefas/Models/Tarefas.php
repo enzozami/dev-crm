@@ -8,7 +8,7 @@
         private string $dataCriacao;
         private int $usuario;
     
-        public function __construct(int $id, string $titulo, string $descricao, string $dataCriacao, int $usuario) {
+        public function __construct(int $id, string $titulo, string $descricao, string $dataCriacao) {
             $this->id = $id;
             $this->titulo = $titulo;
             $this->descricao = $descricao;
