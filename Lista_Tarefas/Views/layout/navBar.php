@@ -20,7 +20,7 @@
       </ul>
       <!-- Exibir o nome do usuário logado na lateral direita -->
       <ul class="navbar-nav ms-auto">
-        <?php if (isset($_SESSION['user_name'])): ?>
+        <?php if (isset($_SESSION['usuario'])): ?>
           <li class="nav-item">
             <a class="nav-link" href="#">Bem-vindo, <?php echo $_SESSION['usuario']; ?></a>
           </li>
