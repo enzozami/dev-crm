@@ -1,4 +1,6 @@
 <?php
+    session_start();
+    
     class Tarefas{
         private int $id;
         private string $titulo;
@@ -11,7 +13,7 @@
             $this->titulo = $titulo;
             $this->descricao = $descricao;
             $this->dataCriacao = $dataCriacao;
-            $this->usuario = $usuario;
+            $this->usuario = $_SESSION['usuario_id'];
         }
 
         public function getId() {return $this->id;}
