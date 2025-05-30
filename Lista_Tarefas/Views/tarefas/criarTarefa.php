@@ -1,3 +1,17 @@
+<?php
+    require_once "../../config/connection.php";
+    require_once "../../controller/TarefaController.php";
+
+    $database = new Database();
+    $pdo = $database->conectar();
+    
+    $controller = new TarefaController($pdo);
+    
+    if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        $controller->criarTarefa();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
