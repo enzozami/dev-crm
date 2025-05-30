@@ -1,3 +1,27 @@
+<?php
+    require_once "../config/connection.php";
+    require_once "../models/Usuario.php";
+
+    if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        $email = $_POST["email"];
+        $senha = $_POST["senha"];
+
+        $usuarioObjeto = new Usuario($database);
+        $usuario = $usuarioObjeto->autenticar($email, $senha);
+        
+        if($usuario){
+            $_SESSION["usuario"] = $usuario["usuario"];
+            $_SESSION["id"] = $usuario["idUsuario"];
+            header("Location: ../Views/dashboard.php");
+            exit;
+        } else {
+            $erro = "Email ou senha inválidos";
+        }
+    }
+
+    session_start()
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
