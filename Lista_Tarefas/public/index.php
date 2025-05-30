@@ -1,4 +1,6 @@
 <?php
+    session_start();
+    
     require_once "../config/connection.php";
     require_once "../models/Usuario.php";
 
@@ -18,8 +20,6 @@
             $erro = "Email ou senha inválidos";
         }
     }
-
-    session_start()
 ?>
 
 <!DOCTYPE html>
