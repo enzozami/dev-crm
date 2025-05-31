@@ -28,21 +28,23 @@
     <div class="container">
         <h2 class="text-center my-3">Lista de Tarefas</h2>
 
-        <div class="row">
-            <div class="col-10 d-flex justify-content-center align-items-center">
-                <input type="text" class="form-control rounded-pill" placeholder="Pesquise aqui o ID da tarefa ou o Título!">
-                <button type="submit" class="btn btn-outline-success">Pesquisar</button>
-                <a href="dashboard.php" class="btn btn-outline-danger">Limpar</a>
-            </div>
-            <div class="col">
-                <div class="d-flex justify-content-end align-items-end my-1">
-                    <a href="tarefas/criarTarefa.php" type="submit" class="btn btn-expand-icon btn-outline-success my-1">
-                        <i class="bi bi-plus-lg"> <br> </i>
-                        <span class="text">Nova Tarefa</span>
-                    </a>
+        <form action="" method="post">
+            <div class="row">
+                <div class="col-10 d-flex justify-content-center align-items-center">
+                    <input type="text" name="pesquisa" class="form-control rounded-pill" placeholder="Pesquise aqui o ID da tarefa ou o Título!">
+                    <button type="submit" class="btn btn-outline-success">Pesquisar</button>
+                    <a href="dashboard.php" class="btn btn-outline-danger">Limpar</a>
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-end align-items-end my-1">
+                        <a href="tarefas/criarTarefa.php" type="submit" class="btn btn-expand-icon btn-outline-success my-1">
+                            <i class="bi bi-plus-lg"> <br> </i>
+                            <span class="text">Nova Tarefa</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </form>
 
         <table class="table table-dark table-striped">
             <thead class="table-dark">
