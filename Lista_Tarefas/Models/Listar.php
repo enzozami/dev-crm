@@ -8,8 +8,8 @@
 
         public function listar(Tarefas $tarefas){
             $sql = "SELECT id, titulo, descricao, dataCriacao AS Data_Criacao, usuario
-                    FROM listaTarefas
-                    LEFT JOIN login ON listaTarefas.id_usuario = login.idUsuario
+                    FROM lista_tarefas
+                    LEFT JOIN login ON lista_tarefas.id_usuario = login.idUsuario
                     WHERE id_usuario = :id";
             $params = [
                 "id" => $tarefas->getId()

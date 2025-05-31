@@ -7,7 +7,7 @@
         }
 
         public function cadastrar(Tarefas $tarefas){
-            $sql = "INSERT INTO listaTarefas(titulo, descricao, dataCriacao, id_usuario)
+            $sql = "INSERT INTO lista_tarefas(titulo, descricao, dataCriacao, id_usuario)
                     VALUES (:titulo, :descricao, :dataCriacao, :usuario)";
             $params = [
                 "titulo" => $tarefas->getTitulo(),

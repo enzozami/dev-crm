@@ -7,7 +7,7 @@
         }
 
         public function editar(Tarefas $tarefas){
-            $sql = "UPDATE listaTarefas
+            $sql = "UPDATE lista_tarefas
                     SET titulo = :titulo, descricao = :descricao, dataCriacao = :dataCriacao
                     WHERE id = :id";
             $params = [
