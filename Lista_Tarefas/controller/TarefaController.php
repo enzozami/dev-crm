@@ -5,6 +5,7 @@
     require_once __DIR__ . "/../models/Editar.php";
     require_once __DIR__ . "/../models/Listar.php";
     require_once __DIR__ . "/../models/Tarefas.php";
+    require_once __DIR__ . "/../models/BuscarTarefaId.php";
 
     class TarefaController{
         private PDO $database;
@@ -42,6 +43,37 @@
             $listagem = new Listar($this->database);
             $listar = $listagem->listar($tarefas);
             return $listar;
+        }
+
+        public function editarTarefa(){
+            if($_SERVER['REQUEST_METHOD'] === 'POST'){
+                $id = $_POST['id'] ?? null;
+                $titulo = $_POST['titulo'] ?? null;
+                $descricao = $_POST['descricao'] ?? null;
+                $dataCriacao = $_POST['dataCriacao'] ?? null;
+                $usuario = (int)$_SESSION['id'];
+                
+                $tarefas = new Tarefas($id, $titulo, $descricao, $dataCriacao, $usuario);
+
+                $edit = new Editar($this->database);
+                $editar = $edit->editar($tarefas);
+                if($editar){
+                    header('Location: /dev-crm/Lista_Tarefas/Views/dashboard.php');
+                    exit;
+                } else {
+                    echo"<script> alert('Erro ao atualizar tarefa!');</script>";
+                }
+            }
+        }
+
+        public function buscarTarefaID(){
+            $id = $_GET['id'];
+            $usuario = (int)$_SESSION['id'];
+
+            $tarefas = new Tarefas($id, "", "", "", $usuario);
+
+            $list = new BuscarTarefaId($this->database);
+            return $list->buscarTarefaId($tarefas);
         }
     }
 ?>
