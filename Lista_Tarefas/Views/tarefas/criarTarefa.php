@@ -51,20 +51,14 @@
                         <label for="dataCriacao" class="text-center form-label">Data de Criação</label>
                         <input type="date" name="dataCriacao" id="dataCriacao" class="form-control rounded-pill">
                     </div>
-                    <div class="col">
-                        <label for="usuario" class="text-center form-label">Usuário</label>
-                        <input type="text" name="usuario" id="usuario" class="form-control rounded-pill" style="text-transform: capitalize">
-                    </div>
                 </div>
             </div>
 
             <div class="d-flex justify-content-center align-items-center">
-                <button type="button" onclick="criarTarefa()" class="btn btn-outline-success my-2">Criar Tarefa</button>
+                <button type="submit" class="btn btn-outline-success my-2">Criar Tarefa</button>
             </div>
         </form>
     </div>
-
-    <script src="../../public/script.js"></script>
 
     <?php
         include_once "../layout/footer.php";
