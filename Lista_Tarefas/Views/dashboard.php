@@ -65,8 +65,12 @@
                     <td class="text-center"><?=$listar['descricao']?></td>
                     <td class="text-center"><?=date_format(new DateTime($listar['Data_Criacao']), "d/m/Y")?></td>
                     <td>
-                        <a href="" class="btn btn-danger"></a>
-                        <a href="" class="btn btn-success"></a>
+                        <a href="tarefas/editarTarefa.php?id=<?=$listar['id']?>" class="btn btn-info">
+                            <i class="bi bi-pencil"></i>
+                        </a>
+                        <a href="" onclick="excluirTarefa()" class="btn btn-danger">
+                            <i class="bi bi-trash3-fill"></i>
+                        </a>
                     </td>
                 </tr>
                 <?php
@@ -75,6 +79,8 @@
             </tbody>
         </table>
     </div>
+
+    <script src="../public/script.js"></script>
 
     <?php
         include_once "layout/footer.php";
