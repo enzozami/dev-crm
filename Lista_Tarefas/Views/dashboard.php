@@ -64,6 +64,10 @@
                     <td class="text-center"><?=$listar['titulo']?></td>
                     <td class="text-center"><?=$listar['descricao']?></td>
                     <td class="text-center"><?=date_format(new DateTime($listar['Data_Criacao']), "d/m/Y")?></td>
+                    <td>
+                        <a href="" class="btn btn-danger"></a>
+                        <a href="" class="btn btn-success"></a>
+                    </td>
                 </tr>
                 <?php
                     }
