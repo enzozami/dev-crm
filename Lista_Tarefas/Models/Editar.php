@@ -17,7 +17,6 @@
                 "dataCriacao" => $tarefas->getDataCriacao() 
             ];
             $stmt = $this->database->prepare($sql);
-            
             return $stmt->execute($params);
         }
     }
