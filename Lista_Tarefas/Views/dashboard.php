@@ -61,7 +61,7 @@
                     <td class="text-center"><?=$listar['id']?></td>
                     <td class="text-center"><?=$listar['titulo']?></td>
                     <td class="text-center"><?=$listar['descricao']?></td>
-                    <td class="text-center"><?=date_format(new DateTime($listar['dataCriacao']), "d/m/Y")?></td>
+                    <td class="text-center"><?=date_format(new DateTime($listar['Data_Criacao']), "d/m/Y")?></td>
                 </tr>
                 <?php
                     }
