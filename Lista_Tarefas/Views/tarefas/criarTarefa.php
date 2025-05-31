@@ -39,11 +39,11 @@
                 <div class="row mt-3 p-2 text-center">
                     <div class="col">
                         <label for="titulo" class="text-center form-label">Título</label>
-                        <input type="text" name="titulo" id="titulo" class="form-control rounded-pill" style="text-transform: capitalize">
+                        <input type="text" name="titulo" id="titulo" class="form-control rounded-pill">
                     </div>
                     <div class="col">
                         <label for="descricao" class="text-center form-label">Descrição</label>
-                        <input type="text" name="descricao" id="descricao" class="form-control rounded-pill" style="text-transform: capitalize">
+                        <input type="text" name="descricao" id="descricao" class="form-control rounded-pill">
                     </div>
                 </div>
                 <div class="row mt-3 text-center">
