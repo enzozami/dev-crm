@@ -14,12 +14,15 @@ CREATE TABLE lista_tarefas(
     titulo VARCHAR(200) NOT NULL,
     descricao VARCHAR(200) NOT NULL,
     dataCriacao date NOT NULL,
-    id_usuario INT NOT NULL,
+    id_usuario INT UNSIGNED NOT NULL,
     FOREIGN KEY (id_usuario) REFERENCES login(idUsuario)
 );
 
 INSERT INTO login(usuario, email, senha)
 VALUES
-("Enzo", "enzozamineli@gmail.com", "zamineli");
 
-select * from listaTarefas;
+("Mary", "mary@gmail.com", "zamineli");
+
+select * from lista_tarefas;
+
+drop database bancocrm
