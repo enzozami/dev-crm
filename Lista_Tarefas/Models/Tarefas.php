@@ -1,19 +1,17 @@
 <?php
-    session_start();
-    
     class Tarefas{
-        private int $id;
+        private ?int $id;
         private string $titulo;
         private string $descricao;
         private string $dataCriacao;
         private int $usuario;
     
-        public function __construct(int $id, string $titulo, string $descricao, string $dataCriacao) {
+        public function __construct(?int $id, string $titulo, string $descricao, string $dataCriacao, int $usuario) {
             $this->id = $id;
             $this->titulo = $titulo;
             $this->descricao = $descricao;
             $this->dataCriacao = $dataCriacao;
-            $this->usuario = $_SESSION['usuario_id'];
+            $this->usuario = $usuario;
         }
 
         public function getId() {return $this->id;}
