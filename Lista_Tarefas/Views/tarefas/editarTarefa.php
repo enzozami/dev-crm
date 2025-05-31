@@ -1,3 +1,19 @@
+<?php
+    require_once "../../config/connection.php";
+    require_once "../../controller/TarefaController.php";
+
+    $database = new Database();
+    $pdo = $database->conectar();
+
+    $controller = new TarefaController($pdo);
+
+    if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        $editar = $controller->editarTarefa(); 
+    }
+
+    $captura = $controller->buscarTarefaID();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,35 +41,32 @@
                 <div class="row mt-2 p-2 text-center">
                     <div class="col">
                         <label for="" class="form-label">ID</label>
-                        <input type="text" name="id" id="id" class="form-control rounded-pill">
+                        <input type="text" name="id" id="id" class="form-control rounded-pill text-center" value="<?=$captura['id']?>" readonly>
                     </div>
                 </div>
 
                 <div class="row mt-2 p-2 text-center">
                     <div class="col">
                         <label for="" class="form-label">Título</label>
-                        <input type="text" name="titulo" id="titulo" class="form-control rounded-pill">
+                        <input type="text" name="titulo" id="titulo" class="form-control rounded-pill" value="<?=$captura['titulo']?>">
                     </div>
                     <div class="col">
                         <label for="" class="form-label">Descrição</label>
-                        <input type="text" name="descricao" id="descricao" class="form-control rounded-pill">
+                        <input type="text" name="descricao" id="descricao" class="form-control rounded-pill" value="<?=$captura['descricao']?>">
                     </div>
                 </div>
 
                 <div class="row mt-2 p-2 text-center">
                     <div class="col">
                         <label for="" class="form-label">Data de Criação</label>
-                        <input type="text" name="dataCriacao" id="dataCriacao" class="form-control rounded-pill">
-                    </div>
-                    <div class="col">
-                        <label for="" class="form-label">Usuário</label>
-                        <input type="text" name="usuario" id="usuario" class="form-control rounded-pill">
+                        <input type="date" name="dataCriacao" id="dataCriacao" class="form-control rounded-pill" value="<?=$captura['dataCriacao']?>">
                     </div>
                 </div>
             </div>
 
             <div class="d-flex justify-content-center align-items-center">
                 <button class="btn btn-outline-success my-2">Atualizar Tarefa</button>
+                <input type="hidden" name="id" value="<?= $captura['id']?>">
             </div>
         </form>
     </div>
