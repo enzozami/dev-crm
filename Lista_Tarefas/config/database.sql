@@ -9,7 +9,7 @@ CREATE TABLE login(
     senha VARCHAR(15) NOT NULL
 );
 
-CREATE TABLE listaTarefas(
+CREATE TABLE lista_tarefas(
     id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
     titulo VARCHAR(200) NOT NULL,
     descricao VARCHAR(200) NOT NULL,
@@ -17,3 +17,9 @@ CREATE TABLE listaTarefas(
     id_usuario INT NOT NULL,
     FOREIGN KEY (id_usuario) REFERENCES login(idUsuario)
 );
+
+INSERT INTO login(usuario, email, senha)
+VALUES
+("Enzo", "enzozamineli@gmail.com", "zamineli");
+
+select * from listaTarefas;
