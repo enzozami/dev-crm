@@ -71,5 +71,9 @@
             </tbody>
         </table>
     </div>
+
+    <?php
+        include_once "layout/footer.php";
+    ?>
 </body>
 </html>
