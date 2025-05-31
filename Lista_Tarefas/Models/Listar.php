@@ -17,7 +17,7 @@
             $stmt = $this->database->prepare($sql);
             $stmt->execute($params);
 
-            $tarefas = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
         }
     }
 ?>
