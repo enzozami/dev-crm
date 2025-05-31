@@ -1,3 +1,14 @@
+<?php
+    require_once "../controller/TarefaController.php";
+    require_once "../config/connection.php";
+
+    $database = new Database();
+    $pdo = $database->conectar();
+
+    $controller = new TarefaController($pdo);
+    $listagem = $controller->listarTarefa();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,10 +36,10 @@
             </div>
             <div class="col">
                 <div class="d-flex justify-content-end align-items-end my-1">
-                    <button type="submit" class="btn btn-expand-icon btn-outline-success my-1">
+                    <a href="tarefas/criarTarefa.php" type="submit" class="btn btn-expand-icon btn-outline-success my-1">
                         <i class="bi bi-plus-lg"> <br> </i>
                         <span class="text">Nova Tarefa</span>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -43,7 +54,18 @@
             </thead>
 
             <tbody>
-                
+                <?php
+                    foreach ($listagem as $listar){ 
+                ?>
+                <tr>
+                    <td class="text-center"><?=$listar['id']?></td>
+                    <td class="text-center"><?=$listar['titulo']?></td>
+                    <td class="text-center"><?=$listar['descricao']?></td>
+                    <td class="text-center"><?=date_format(new DateTime($listar['dataCriacao']), "d/m/Y")?></td>
+                </tr>
+                <?php
+                    }
+                ?>
             </tbody>
         </table>
     </div>
