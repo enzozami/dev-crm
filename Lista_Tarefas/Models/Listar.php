@@ -12,7 +12,7 @@
                     LEFT JOIN login ON lista_tarefas.id_usuario = login.idUsuario
                     WHERE id_usuario = :id";
             $params = [
-                "id" => $tarefas->getId()
+                "id" => $tarefas->getUsuario()
             ];
             $stmt = $this->database->prepare($sql);
             $stmt->execute($params);
