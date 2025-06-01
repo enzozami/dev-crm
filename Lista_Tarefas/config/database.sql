@@ -1,6 +1,6 @@
-CREATE DATABASE bancoCRM;
+CREATE DATABASE bancocrm;
 
-USE bancoCRM;
+USE bancocrm;
 
 CREATE TABLE login(
     idUsuario INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
@@ -20,9 +20,5 @@ CREATE TABLE lista_tarefas(
 
 INSERT INTO login(usuario, email, senha)
 VALUES
-
-("Mary", "mary@gmail.com", "zamineli");
-
-select * from lista_tarefas;
-
-drop database bancocrm
+('Usuário Teste 1', 'usuario1@exemplo.com', 'senha123'),
+('Usuário Teste 2', 'usuario2@exemplo.com', 'senha456');
