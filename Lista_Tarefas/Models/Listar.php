@@ -6,9 +6,7 @@
             $this->database = $database;
         }
 
-        public function listar(Tarefas $tarefas){
-            $pesquisa = $_POST['pesquisa'] ?? '';
-            
+        public function listar(Tarefas $tarefas, string $pesquisa = ''){
             $sql = "SELECT id, titulo, descricao, dataCriacao AS Data_Criacao, usuario
                     FROM lista_tarefas
                     LEFT JOIN login ON lista_tarefas.id_usuario = login.idUsuario
