@@ -20,7 +20,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <?php
         include_once "layout/navBar.php";
     ?>
@@ -31,7 +31,7 @@
         <form action="" method="post">
             <div class="row">
                 <div class="col-10 d-flex justify-content-center align-items-center">
-                    <input type="text" name="pesquisa" class="form-control rounded-pill" placeholder="Pesquise aqui o ID da tarefa ou o Título!">
+                    <input type="text" name="pesquisa" class="form-control rounded-pill" placeholder="Pesquise aqui o Título da tarefa!">
                     <button type="submit" class="btn btn-outline-success">Pesquisar</button>
                     <a href="home.php" class="btn btn-outline-danger">Limpar</a>
                 </div>
@@ -48,7 +48,6 @@
 
         <table class="table table-bordered table-hover custom-table">
             <thead class="table-dark">
-                <th class="text-center">ID</th>
                 <th class="text-center">Título</th>
                 <th class="text-center">Descrição</th>
                 <th class="text-center">Data de Criação</th>
@@ -60,7 +59,6 @@
                     foreach ($listagem as $listar){ 
                 ?>
                 <tr>
-                    <td class="text-center"><?=$listar['id']?></td>
                     <td class="text-center"><?=$listar['titulo']?></td>
                     <td class="text-center"><?=$listar['descricao']?></td>
                     <td class="text-center"><?=date_format(new DateTime($listar['Data_Criacao']), "d/m/Y")?></td>
