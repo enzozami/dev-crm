@@ -1,11 +1,13 @@
 <?php
     session_start();
     
+    require_once __DIR__ . "/../config/connection.php";
     require_once __DIR__ . "/../models/Cadastrar.php";
     require_once __DIR__ . "/../models/Editar.php";
     require_once __DIR__ . "/../models/Listar.php";
     require_once __DIR__ . "/../models/Tarefas.php";
     require_once __DIR__ . "/../models/BuscarTarefaId.php";
+    require_once __DIR__ . "/../models/Deletar.php";
 
     class TarefaController{
         private PDO $database;
@@ -75,5 +77,28 @@
             $list = new BuscarTarefaId($this->database);
             return $list->buscarTarefaId($tarefas);
         }
+
+        public function excluirTarefa($id){
+            $usuario = (int)$_SESSION['id'];
+
+            $tarefas = new Tarefas($id, "", "", "", $usuario);
+
+            $excluir = new Deletar($this->database);
+            return $excluir->deletar($tarefas);
+        }
+    }
+    
+    $database = new Database();
+    $pdo = $database->conectar();
+    
+    $controller = new TarefaController($pdo);
+    
+    $acao = $_GET['acao'] ?? null;
+    $id = $_GET['id'] ?? null;
+    
+    if($acao === 'excluir'){
+        $controller->excluirTarefa($id);
+        header('Location: ../Views/dashboard.php?msg=excluido');
+        exit;
     }
 ?>
