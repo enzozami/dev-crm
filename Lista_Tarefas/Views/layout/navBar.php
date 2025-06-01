@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/dev-crm/Lista_Tarefas/Views/dashboard.php#">HOME</a>
+          <a class="nav-link active" aria-current="page" href="/dev-crm/Lista_Tarefas/Views/home.php#">HOME</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
