@@ -33,7 +33,7 @@
                 <div class="col-10 d-flex justify-content-center align-items-center">
                     <input type="text" name="pesquisa" class="form-control rounded-pill" placeholder="Pesquise aqui o ID da tarefa ou o Título!">
                     <button type="submit" class="btn btn-outline-success">Pesquisar</button>
-                    <a href="dashboard.php" class="btn btn-outline-danger">Limpar</a>
+                    <a href="home.php" class="btn btn-outline-danger">Limpar</a>
                 </div>
                 <div class="col">
                     <div class="d-flex justify-content-end align-items-end my-1">
