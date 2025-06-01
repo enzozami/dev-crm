@@ -40,10 +40,11 @@
 
         public function listarTarefa(){
             $usuario = (int) $_SESSION['id'];
+            $filtro = $_POST['pesquisa'] ?? '';
 
-            $tarefas = new Tarefas(null, "", "", "", $usuario);
+            $tarefas = new Tarefas(null, $filtro, "", "", $usuario);
             $listagem = new Listar($this->database);
-            $listar = $listagem->listar($tarefas);
+            $listar = $listagem->listar($tarefas, $filtro);
             return $listar;
         }
 
