@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="../public/style.css">
+    <link rel="stylesheet" href="/dev-crm/Lista_Tarefas/public/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -26,7 +26,7 @@
     ?>
 
     <div class="container">
-        <h2 class="text-center my-3">Lista de Tarefas</h2>
+        <h2 class="text-center my-3">LISTA DE TAREFAS</h2>
 
         <form action="" method="post">
             <div class="row">
@@ -46,7 +46,7 @@
             </div>
         </form>
 
-        <table class="table table-dark table-striped">
+        <table class="table table-bordered table-hover custom-table">
             <thead class="table-dark">
                 <th class="text-center">ID</th>
                 <th class="text-center">Título</th>
