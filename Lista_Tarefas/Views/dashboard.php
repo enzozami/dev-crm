@@ -68,7 +68,7 @@
                         <a href="tarefas/editarTarefa.php?id=<?=$listar['id']?>" class="btn btn-info">
                             <i class="bi bi-pencil"></i>
                         </a>
-                        <a href="" onclick="excluirTarefa()" class="btn btn-danger">
+                        <a href="" onclick="excluirTarefa('<?=$listar['id']?>', '<?=$listar['titulo']?>')" class="btn btn-danger">
                             <i class="bi bi-trash3-fill"></i>
                         </a>
                     </td>
