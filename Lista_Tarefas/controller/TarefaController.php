@@ -30,7 +30,7 @@
                 $id = $cadastro->cadastrar($tarefa);
 
                 if($id){
-                    header('Location: /dev-crm/Lista_Tarefas/Views/dashboard.php');
+                    header('Location: /dev-crm/Lista_Tarefas/Views/home.php');
                     exit;
                 } else {
                     echo"<script> alert('Erro ao cadastrar tarefa!');</script>";
@@ -60,7 +60,7 @@
                 $edit = new Editar($this->database);
                 $editar = $edit->editar($tarefas);
                 if($editar){
-                    header('Location: /dev-crm/Lista_Tarefas/Views/dashboard.php');
+                    header('Location: /dev-crm/Lista_Tarefas/Views/home.php');
                     exit;
                 } else {
                     echo"<script> alert('Erro ao atualizar tarefa!');</script>";
@@ -98,7 +98,7 @@
     
     if($acao === 'excluir'){
         $controller->excluirTarefa($id);
-        header('Location: ../Views/dashboard.php?msg=excluido');
+        header('Location: ../Views/home.php?msg=excluido');
         exit;
     }
 ?>
