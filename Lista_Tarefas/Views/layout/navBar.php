@@ -7,14 +7,14 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="">HOME</a>
+          <a class="nav-link active" aria-current="page" href="/dev-crm/Lista_Tarefas/Views/dashboard.php#">HOME</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             FUNÇÕES
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="">Nova Tarefa</a></li>
+            <li><a class="dropdown-item" href="/dev-crm/Lista_Tarefas/Views/tarefas/criarTarefa.php#">Nova Tarefa</a></li>
           </ul>
         </li>
       </ul>
@@ -25,7 +25,7 @@
             <a class="nav-link" href="#">Bem-vindo, <?php echo $_SESSION['usuario']; ?></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../Logout.php">Sair</a>
+            <a class="nav-link" href="/dev-crm/Lista_Tarefas/public/logout.php">Sair</a>
           </li>
         <?php else: ?>
           <li class="nav-item">
