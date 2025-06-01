@@ -48,7 +48,7 @@ dev-crm/
 
 - PHP 7.4 ou superior
 - MySQL ou MariaDB
-- Servidor web (Apache, Nginx ou via XAMPP/WAMP)
+- Servidor web (Apache via XAMPP/WAMP)
 
 ---
 
@@ -57,7 +57,7 @@ dev-crm/
 1. **Clone o repositório**
 
 ```bash
-git clone https://github.com/seuusuario/dev-crm.git
+git clone https://github.com/enzozami/dev-crm.git
 ```
 
 2. **Configure o banco de dados**
