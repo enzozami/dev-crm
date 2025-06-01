@@ -25,7 +25,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <?php
         include_once "../layout/navBar.php";
     ?>
@@ -54,9 +54,6 @@
                         <label for="" class="form-label">Descrição</label>
                         <input type="text" name="descricao" id="descricao" class="form-control rounded-pill" value="<?=$captura['descricao']?>">
                     </div>
-                </div>
-
-                <div class="row mt-2 p-2 text-center">
                     <div class="col">
                         <label for="" class="form-label">Data de Criação</label>
                         <input type="date" name="dataCriacao" id="dataCriacao" class="form-control rounded-pill" value="<?=$captura['dataCriacao']?>">
