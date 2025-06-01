@@ -18,7 +18,7 @@
         if($usuario){
             $_SESSION["usuario"] = $usuario["usuario"];
             $_SESSION["id"] = $usuario["idUsuario"];
-            header("Location: ../Views/dashboard.php");
+            header("Location: ../Views/home.php");
             exit;
         } else {
             $erro = "Email ou senha inválidos";
@@ -45,7 +45,7 @@
     <div class="container">
         <form action="" method="post">
 
-            <h1 class="text-center">LISTA DE TAREFAS</h1>
+            <h1 class="text-center my-3">LISTA DE TAREFAS</h1> <br>
 
             <h3 class="text-center">CRM Soluções</h3>
 
