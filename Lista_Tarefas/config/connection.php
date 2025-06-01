@@ -3,7 +3,7 @@
         private string $serverName = "localhost"; 
         private string $user = "root"; 
         private string $password = "";
-        private string $dbName = "bancoCRM";
+        private string $dbName = "bancocrm";
     
         public function conectar(): ? PDO {
             try {
