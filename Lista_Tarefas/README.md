@@ -38,7 +38,7 @@ dev-crm/
 │   │   └── logout.php   
 │   │   └── script.js    
 │   │   └── style.css        
-│   └── README.md/
+│   └── README.md
          
 ```
 
@@ -62,11 +62,11 @@ git clone https://github.com/enzozami/dev-crm.git
 
 2. **Configure o banco de dados**
 
-- No diretório `Lista_Tarefas/database/`, abra o arquivo `database.sql` e execute no seu gerenciador MySQL.
+- No diretório `Lista_Tarefas/config/`, abra o arquivo `database.sql` e execute no seu gerenciador MySQL.
 
 ```sql
-CREATE DATABASE dev_crm;
-USE dev_crm;
+CREATE DATABASE bancocrm;
+USE bancocrm;
 -- (demais comandos estão no arquivo)
 ```
 
@@ -77,12 +77,13 @@ USE dev_crm;
 4. **Acesse via navegador**
 
 ```
-http://localhost/dev-crm/Lista_Tarefas/
+http://localhost:8080/dev-crm/Lista_Tarefas/
 ```
+(Substitua 8080 pela porta usada no seu ambiente local, se for diferente.)
 
 5. **Login de Teste**
 
-- Você pode inserir um novo usuário no direto no banco ou utilizar o que script que já está disponível.
+- Você pode inserir um novo usuário diretamente no banco ou utilizar o que script que já está disponível.
 
 ---
 
@@ -135,7 +136,7 @@ lista_tarefas.id_usuario → login.idUsuario
 
 ---
 
-## 🧱 Requisitos Atendidos
+## ✅ Requisitos Funcionais Atendidos
 
 | Requisito                                        | Status |
 |--------------------------------------------------|--------|
