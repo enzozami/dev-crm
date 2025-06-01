@@ -1,10 +1,94 @@
+/* ESTILIZAÇÃO */
+
+body{
+    font-family: 'Inter', sans-serif !important;
+    background-color: #f4f1ee !important;
+    color: #3e2c23 !important;
+}
+
+.navbar{
+    background-color: #8b5e3c !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .dropdown-toggle,
+.navbar .dropdown-item {
+    color: #ffffff !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .dropdown-item:hover {
+    background-color: #a76b45 !important; /* marrom um pouco mais claro no hover */
+    color: #ffffff !important;
+}
+
+.navbar .dropdown-menu {
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .dropdown-item {
+    color: #3e2c23 !important;
+}
+
+.custom-table {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.custom-table thead {
+    background-color: #8b5e3c;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.custom-table th,
+.custom-table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px;
+    border-color: #e2dcd6;
+    color: #3e2c23;
+}
+
+.custom-table tbody tr:hover {
+    background-color: #f7efe9;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.custom-table .btn-info {
+    background-color: #6c757d;
+    border: none;
+    color: white;
+}
+
+.custom-table .btn-info:hover {
+    background-color: #5a6268;
+}
+
+.custom-table .btn-danger {
+    background-color: #842029;
+    border: none;
+}
+
+.custom-table .btn-danger:hover {
+    background-color: #6a1b21;
+}
+
+/* ------------ */
 #login {
     width: 350px;
     height: 300px;
     max-width: 500px;
     max-height: 450px;
     padding: 10px;
-    border: 3px solid white;
+    border: 3px solid #d2691e;
     border-radius: 15px;
     position: absolute; /* Permite o uso de top e left */
     top: 50%; /* Alinha ao meio verticalmente */
