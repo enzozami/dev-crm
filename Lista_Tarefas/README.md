@@ -54,6 +54,8 @@ dev-crm/
 - Falhas ao acessar páginas diretamente via URL
 - Redirecionamentos incorretos
 
+--
+
 ## 🧾 Requisitos
 
 - PHP 7.4 ou superior
