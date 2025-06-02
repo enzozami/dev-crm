@@ -6,7 +6,7 @@ CREATE TABLE login(
     idUsuario INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
     usuario VARCHAR(50) NOT NULL,
     email VARCHAR(50) UNIQUE NOT NULL,
-    senha VARCHAR(15) NOT NULL
+    senha VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE lista_tarefas(
