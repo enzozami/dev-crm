@@ -32,9 +32,10 @@
                 if($id){
                     header('Location: /dev-crm/Lista_Tarefas/Views/home.php');
                     exit;
-                } else {
-                    echo"<script> alert('Erro ao cadastrar tarefa!');</script>";
                 }
+
+                echo"<script> alert('Erro ao cadastrar tarefa!');</script>";
+                
             }
         }
 
@@ -63,9 +64,10 @@
                 if($editar){
                     header('Location: /dev-crm/Lista_Tarefas/Views/home.php');
                     exit;
-                } else {
-                    echo"<script> alert('Erro ao atualizar tarefa!');</script>";
                 }
+                
+                echo"<script> alert('Erro ao atualizar tarefa!');</script>";
+                
             }
         }
 
