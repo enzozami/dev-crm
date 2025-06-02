@@ -45,11 +45,11 @@ dev-crm/
 ---
 
 # ⚠️ Observação Importante sobre o Ambiente
-Este projeto foi desenvolvido e testado utilizando XAMPP com Apache como servidor web.
+## Este projeto foi desenvolvido e testado utilizando XAMPP com Apache como servidor web.
 
-## ⚠️ O roteamento e o funcionamento correto do sistema dependem do comportamento padrão do Apache, especialmente no que diz respeito ao redirecionamento e leitura de caminhos de URL.
+### ⚠️ O roteamento e o funcionamento correto do sistema dependem do comportamento padrão do Apache, especialmente no que diz respeito ao redirecionamento e leitura de caminhos de URL.
 
-Caso opte por executar este projeto em ambientes diferentes, como Docker com Nginx, é possível que ocorram problemas de roteamento, como:
+### Caso opte por executar este projeto em ambientes diferentes, como Docker com Nginx, é possível que ocorram problemas de roteamento, como:
 
 - Falhas ao acessar páginas diretamente via URL
 - Redirecionamentos incorretos
